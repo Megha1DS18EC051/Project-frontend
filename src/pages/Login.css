@@ -1,0 +1,36 @@
+/* body {
+    background-image: url("https://th.bing.com/th/id/R.20c56e0b13baf1b5ef61905accdd2bd2?rik=aO1aupCzhE2aWw&riu=http%3a%2f%2fmams.rmit.edu.au%2fep3eymvfr6ee1.jpg&ehk=phXKumASB%2bxJnRnJKH%2fICQjxwvPcsK0KAO%2bVWjNEbAQ%3d&risl=&pid=ImgRaw&r=0");
+  } */
+.single{
+height: 400px;
+width:500px;
+margin-left: 5%;
+}
+.containertwo{
+    height: 400px;
+    width: 350px;
+    background-color:rgb(215, 204, 191);
+   
+    border-style: solid;
+  border-color:darkblue;
+  border-radius: 20px;
+  margin-left: 440px;
+  margin-right: 370px;
+  top: 100px;
+  position: relative;
+}
+.form-group input{
+    height: 40px;
+    width:90%;
+    margin-left: 10px;
+}
+.form-group label{
+    margin-left: 10px;
+}
+.btn{
+    margin-left: 40%;
+    width: 70px;
+}
+.user{
+  color: black;
+}

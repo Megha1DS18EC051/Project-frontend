@@ -1,0 +1,22 @@
+.cardone{
+    height: 400px;
+    width: 450px;
+   
+    border-style: solid;
+  border-color:cadetblue;
+  border-radius: 20px;
+  margin-left: 400px;
+  margin-right: 300px;
+}
+#exampleFormControlInput1{
+    height: 40px;
+    width:90%;
+    margin-left: 10px;
+}
+.form-label{
+    margin-left: 10px;
+}
+#button{
+    margin-left: 30%;
+    width: 150px;
+}

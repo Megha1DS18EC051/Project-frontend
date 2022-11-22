@@ -1,0 +1,33 @@
+.containtwo{
+    height: 500px;
+    width: 500px;
+   
+    border-style: solid;
+  border-color:darkblue;
+  border-radius: 20px;
+  margin-left: 370px;
+  margin-right: 370px;
+}
+.form__group input{
+    height: 40px;
+    width:90%;
+    margin-left: 100px;
+}
+.form__group label{
+    margin-left: 10px;
+}
+.Cart__btn{
+    margin-left: 40%;
+    width: 70px;
+}
+.mb-4{
+    margin-top: 10px;
+    margin-left: 170px;
+    color: crimson;
+}
+.Cartbtn{
+ margin-left: 200px;
+background-color:cadetblue;
+color: crimson;
+
+}
