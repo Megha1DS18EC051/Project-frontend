@@ -18,11 +18,12 @@ import AllFood from './pages/AllFood';
 import BoardAdmin from './Services/BoardAdmin'
 import Details from './pages/Details';
 import Edit from './pages/Edit';
+import Signup from './pages/Signup';
 function App() {
   // const [showModeratorBoard, setShowModeratorBoard] = useState(false);
   const [showAdminBoard, setShowAdminBoard] = useState(false);
-  const [currentUser, setCurrentUser] = useState(undefined);
-  const [UserBoard, setUserBoard] = useState(undefined);
+  const [currentUser, setCurrentUser] = useState(false);
+  const [getUserBoard, setUserBoard] = useState(false);
   const [cartone, setCartone] = useState([]);
 
 
@@ -68,6 +69,7 @@ function App() {
               Home
             </Link>
           </li>
+          
 
           
           {showAdminBoard && (
@@ -102,7 +104,7 @@ function App() {
             
           
 
-{UserBoard && (
+{getUserBoard && (
 
 <>
 <li className="nav-item">
@@ -139,6 +141,7 @@ Contact
 
         {currentUser ? (
           <div className="navbar-nav ml-auto">
+            
         
             
             <li className="nav-item" id="box">
@@ -154,6 +157,13 @@ Contact
               <i class="ri-user-line"></i>
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to={"/signup"} className="nav-link" id="log">
+              Signup
+              </Link>
+            </li>
+            
+            
 
             
           </div>
@@ -166,6 +176,7 @@ Contact
           <Route path="/"  element={<Home/>}></Route>
           <Route path="/home"  element={<Home/>}></Route>
           <Route path="/login"  element={<Login/>}></Route>
+          <Route path="/signup"  element={<Signup/>}></Route>
          
          
           <Route path="/sweets"  element={<AllFood cartone={cartone} setCartone={setCartone}/>}></Route>

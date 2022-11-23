@@ -23,7 +23,7 @@ const UserService = {
   getPublicContent,
   getUserBoard,
   getModeratorBoard,
-  getUserBoard,
+  getAdminBoard,
 };
 
 export default UserService;

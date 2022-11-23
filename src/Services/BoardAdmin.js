@@ -3,6 +3,7 @@ import axios from "axios";
 import UserService from "../Services/user.service";
 import { useNavigate } from "react-router-dom";
 import './Admin.css'
+import imag from './add.jpg'
 const BoardAdmin = () => {
   const [content, setContent] = useState("");
   const navigate=useNavigate();
@@ -80,7 +81,19 @@ const BoardAdmin = () => {
   }, []);
 
   return (
+    <>
+    <div
+        class="bg_image"
+        style={{
+          backgroundImage: `url(${imag})`,
+          backgroundSize: "cover",
+          height: "100vh",
+        
+        }}
+      >
+    
     <div className=" cardone">
+    
       
    <form onSubmit={(e) => onSubmit(e)}>
    <br></br>
@@ -105,6 +118,8 @@ const BoardAdmin = () => {
   
    </form>
    </div>
+   </div>
+   </>
    
   );
 };

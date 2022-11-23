@@ -66,7 +66,7 @@ const Crud = (props) => {
       
       return (
         <div>
-            <div className='container'>
+            <div className='container' >
 
                 <div className='py-4'>
 

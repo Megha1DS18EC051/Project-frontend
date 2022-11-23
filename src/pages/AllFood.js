@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import data from '../Data';
+
 import './AllFood.css'
 import { useDispatch } from 'react-redux'
 import UserService from "../Services/user.service";
@@ -59,8 +59,7 @@ const navigate = useNavigate();
   const dispatch=useDispatch();
   const addToCart = (product) => {
 
-    // console.log(product)
-
+    
    
 
     let newCart = [...cartone];
@@ -75,7 +74,7 @@ const navigate = useNavigate();
 
     );
 
-    // console.log(itemInCart)
+   
 
     if (itemInCart) {
 
@@ -97,44 +96,12 @@ const navigate = useNavigate();
 
     setCartone(newCart);
 
-    // console.log(newCart)
+   
 
   };
   return (
     
     
-    // <div>
-    //   <div className="container">
-    //   <div className='products'>
-          
-    //       {data.map((productSweet)=>{
-    //             productSweet.quantity=1;
-    //           return(
-    //           <div className='card '>
-    //               <div>
-    //                   <img className="products-image"
-    //                   src={productSweet.image} alt={productSweet.name}></img><br></br>
-    //               </div>
-                 
-    //               <h3 className="products-name">{productSweet.name}</h3>
-                  
-             
-                  
-    //               <h3 className="products-price">{productSweet.price} /-</h3>
-                 
-                  
-    //                   <button className="product-add-button" onClick={()=>dispatch({type:"ADD",payload:productSweet})}>
-    //                   Add to Cart</button>
-                  
-
-    //           </div>)
-    //           }
-    //       )}
-         
-    //   </div>
-    // </div>
-  
-    // </div>
    
 <>
       <h3 className="pro">
@@ -183,4 +150,4 @@ users.map((user,index)=>{
   );
 }
 
-export default AllFood
+export default AllFood;

@@ -1,12 +1,16 @@
 .cardone{
     height: 400px;
     width: 450px;
+    
    
     border-style: solid;
   border-color:cadetblue;
   border-radius: 20px;
   margin-left: 400px;
   margin-right: 300px;
+  position: relative;
+  top: 40px;
+  background-color: rgb(215, 230, 190);
 }
 #exampleFormControlInput1{
     height: 40px;

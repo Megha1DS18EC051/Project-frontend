@@ -1,5 +1,5 @@
 
-import React, { useState, useRef } from "react";
+import React, { useState} from "react";
 import { useNavigate } from 'react-router-dom';
 import AuthService from "../Services/auth.service";
 import './Login.css'
@@ -8,13 +8,9 @@ import image from './two.jpg'
 const Login = (props) => {
     let navigate = useNavigate();
 
-  // const form = useRef();
-  // const checkBtn = useRef();
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  // const [loading, setLoading] = useState(false);
-  // const [message, setMessage] = useState("");
  
   const login=()=>{
       localStorage.setItem(login==="true")
@@ -41,12 +37,7 @@ const Login = (props) => {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // setMessage("");
-    // setLoading(true);
-
-    // form.current.validateAll();
-
-  //  if (checkBtn.current.context._errors.length === 0) {
+    
       AuthService.login(username, password).then(
         () => {
           navigate("/home");
@@ -60,13 +51,10 @@ const Login = (props) => {
             error.message ||
             error.toString();
 
-          // setLoading(false);
-          // setMessage(resMessage);
+         
         }
       );
-  //  else {
-  //     setLoading(false);
-  //   }
+  
   };
 
   return (
@@ -128,14 +116,7 @@ const Login = (props) => {
             </button>
           </div>
 
-          {/* {message && (
-            <div className="form-group">
-              <div className="alert alert-danger" role="alert">
-                {message}
-              </div>
-            </div>
-          )} */}
-          {/* <CheckButton style={{ display: "none" }} ref={checkBtn} /> */}
+          
         </form>
       </div>
       </div>

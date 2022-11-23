@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Provider } from "react-redux";
 import {createStore} from 'redux'
 
-import Reducer from './Reducer';
+import Reducer from './pages/Reducer';
 const store=createStore(Reducer);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
